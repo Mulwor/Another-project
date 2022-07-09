@@ -3,7 +3,7 @@ function App() {
     <div className="wrapper">
       <header>
         <div className = 'headerLeft'>
-          <img width={40} height={40} src = "/img/..." />
+          <img width={40} height={40} src="/img/logotype.png" />
           <div className = 'headerInfo'>
             <h3>React Sneakers</h3>  
             <p>Магазин лучших кроссовок</p>  
@@ -12,11 +12,11 @@ function App() {
 
       <ul className = 'headerRight'>
           <li>
-            <svg />
+          <img width={18} height={18} src="/img/Vector.svg" />
             <span> 1205 руб.</span>
           </li>
           <li>
-            <svg />
+          <img width={18} height={18} src="/img/Union.svg" />
           </li>
       </ul>
     </header>
