@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom/client';
 в HTML */
 
 import './index.scss';
+import 'macro-css'
 // Возьми весь CSS файл и примени его здесь
 
 import App from './App';
