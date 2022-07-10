@@ -5,3 +5,6 @@ This repository was created special for course of ArchakovBlog. I will watch his
 2. npm install
 3. npm install node-sass@4.14.1
 4. npm install macro-css
+
+
+- npm start
