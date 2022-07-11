@@ -1,6 +1,27 @@
 function App() {
   return (
     <div className="wrapper clear">
+      <div className="overlay">
+        <div className="drawer">
+            <h2 className="mb-30"> Корзина </h2>
+
+            <div className="cartItem d-flex align-center">
+              <div 
+                style={{backgroundImage: 'url(/img/Sneakers/First-shoes.jpg)'}} className='cartItemImg'>
+              </div>
+
+              <div className="mr-20">
+                <p className ="mb-5">Мужские Кроссовки Nike Air Max 270</p>
+                <b>12 999 руб.</b>
+              </div>
+              
+              <img className = "removeBtn" src='/img/Krestik.svg' alt="Remove"/>
+            </div>
+
+        </div>
+      </div>
+
+
       <header class = 'd-flex justify-between align-center p-40'>
         <div className = 'd-flex align-center'>
           <img width={40} height={40} src="/img/logotype.png" />
@@ -23,9 +44,22 @@ function App() {
     </header>
 
     <div className = 'content p-40'>
-      <h1 clsa>Все кросовки</h1>
+        <div className="d-flex align-center justify-between mb-40">
+          <h1>Все кросовки</h1>
+          <div className="search-block d-flex">
+              <img src="/img/search.svg" alt='Search' />
+              <input placeholder="Поиск ..." />
+          </div>
+        </div>
+        
         <div className="d-flex">
           <div className = "card">
+            <div className = 'favorite'>
+              <img src="/img/Unlike.svg" alt="Unnactive-like"/>
+            </div>
+
+            
+            
             <img width ={133} height={112} src = "/img/Sneakers/First-shoes.jpg" alt = "" />
             <h5> Мужские Кроссовки Under Armour Curry 8 </h5>
             <div className = "d-flex justify-between align-center">
