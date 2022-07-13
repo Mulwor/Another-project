@@ -1,13 +1,11 @@
-
-
 function Card() {
     return (
       <div className = "card">
         <div className = 'favorite'>
           <img src="/img/Unlike.svg" alt="Unnactive-like"/>
         </div>
-        <img width ={133} height={112} src = "/img/Sneakers/First-shoes.jpg" alt = "" />
-        <h5> Мужские Кроссовки Under Armour Curry 8 </h5>
+        <img width ={133} height={112} src = "/img/Sneakers/First-shoes.jpg" alt = "Sneakers" />
+        <h5> Мужские Кроссовки Nike Blazer Mid Suede </h5>
     
         <div className = "d-flex justify-between align-center">
             <div className = 'd-flex flex-column'>

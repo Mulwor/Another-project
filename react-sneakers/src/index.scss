@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: 'Inter', system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #e7f6ff;
@@ -16,14 +15,14 @@ body {
   border-radius: 20px;
   max-width: 1080px;
   margin: 50px auto;
-  padding: 40px;
 }
 
 header {
-  border-bottom: 1px solid #eaa;
+  border-bottom: 1px solid #eaaeea;
   img {
     margin-right: 15px;
   }
+
   h3, 
   p {
     margin: 0;
@@ -37,14 +36,14 @@ header {
 }
 .card {
   border: 1px solid #f8f8f8;
-  padding: 20px;
+  padding: 30px;
   width: 220px;
   border-radius: 40px;
   margin-right: 30px;
   transition: box-shadow 0.2s ease-in-out transform 0.2s ease-in-out;
 
   &:hover{
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.06);
     transform: translateY(-5px);
   }
 
@@ -54,7 +53,7 @@ header {
   }
 
   span {
-    text-transform: uppercase;
+    opacity: 0.5;
     font-size: 13px;
     text-transform: uppercase;
   }
@@ -95,23 +94,25 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
   width: 100%;
   height: 100%;
 }
 
 .drawer {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 420px;
   right: 0;
   height: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
   padding: 30px;
 
-
   .items {
+    flex: 1;
     overflow: auto;
     margin-bottom: 40px;
   }
@@ -141,7 +142,6 @@ header {
       }
     }
   }
-}
 
   .greenButton {
     position: relative;
@@ -159,6 +159,7 @@ header {
       transition: transform 0.15s ease-in-out;
     }
   }
+}
 
   .greenButton {
     width: 100%;
@@ -170,7 +171,7 @@ header {
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.2s ease-in-out;
+    transition: background 0.1s ease-in-out;
 
     &:hover {
       background: lighten(#9dd558, 5%);
