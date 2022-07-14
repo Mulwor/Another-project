@@ -1,16 +1,16 @@
-function Card() {
+function Card(props) {
     return (
       <div className = "card">
         <div className = 'favorite'>
           <img src="/img/Unlike.svg" alt="Unnactive-like"/>
         </div>
-        <img width ={133} height={112} src = "/img/Sneakers/First-shoes.jpg" alt = "Sneakers" />
-        <h5> Мужские Кроссовки Nike Blazer Mid Suede </h5>
+        <img width ={133} height={112} src = {props.imageUrl} alt = "Sneakers" />
+        <h5>{props.title}</h5>
     
         <div className = "d-flex justify-between align-center">
             <div className = 'd-flex flex-column'>
                 <span>Цена:</span>
-                <b>12 999</b>
+                <b>{props.price} руб.</b>
             </div>
   
             <button className='button'>

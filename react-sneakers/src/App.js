@@ -2,6 +2,29 @@ import Card from './components/Card'
 import Header from './components/Header'
 import Drawer from './components/Drawer'
 
+const arr = [
+  {
+    title: "Мужские Кросовки Nike Blazer Mid Suede", 
+    price: 12999,
+    imageUrl: "/img/Sneakers/First-shoes.jpg"
+  },
+  {
+    title: "Мужские Кроссовки Nike Air Max 270", 
+    price: 15600,
+    imageUrl: "/img/Sneakers/Second-shoes.jpg"
+  },
+  {
+    title: "Мужские Кроссовки Nike Blazer Mid Suede", 
+    price: 8499,
+    imageUrl: "/img/Sneakers/Third-shoes.jpg"
+  },
+  {
+    title: 'Кроссовки Puma X Aka Boku Future Rider',
+    price: 8999,
+    imageUrl: "/img/Sneakers/Fourth-shoes.jpg"
+  },
+]
+
 function App() {
   return (
     <div className="wrapper clear">
@@ -16,56 +39,14 @@ function App() {
           </div>
         </div>
         
-        <div className="d-flex">
-          <Card />
-          <div className = "card">
-            <img width ={133} height={112} src = "/img/Sneakers/Second-shoes.jpg" alt = "" />
-            <h5> Мужские Кроссовки Under Armour Curry 8 </h5>
-            <div className = "d-flex justify-between align-center">
-              <div className = 'd-flex flex-column'>
-                <span>Цена:</span>
-                <b>12 999</b>
-              </div>
-              
-              <button className='button'>
-                  <img width={11} height={11} src="/img/Vector-plus.svg"/>
-              </button>
-            </div>
-          </div>
-
-
-          <div className = "card">
-            <img width ={133} height={112} src = "/img/Sneakers/Third-shoes.jpg" alt = "" />
-            <h5> Мужские Кроссовки Under Armour Curry 8 </h5>
-            <div className = "d-flex justify-between align-center">
-              <div className = 'd-flex flex-column'>
-                <span>Цена:</span>
-                <b>12 999</b>
-              </div>
-              
-              <button className='button'>
-                  <img width={11} height={11} src="/img/Vector-plus.svg"/>
-              </button>
-            </div>
-          </div>
-
-
-          <div className = "card">
-            <img width ={133} height={112} src = "/img/Sneakers/Fourth-shoes.jpg" alt = "" />
-            <h5> Мужские Кроссовки Under Armour Curry 8 </h5>
-            <div className = "d-flex justify-between align-center">
-              <div className = 'd-flex flex-column'>
-                <span>Цена:</span>
-                <b>12 999</b>
-              </div>
-              
-              <button className='button'>
-                  <img width={11} height={11} src="/img/Vector-plus.svg"/>
-              </button>
-            </div>
-          </div>
-        
-
+        <div className="d-flex"> 
+        { arr.map((obj) => ( 
+            <Card 
+              title = {obj.title}
+              price = {obj.price} 
+              imageUrl = {obj.imageUrl}
+            />
+         )) } 
         </div>
 
     </div>
